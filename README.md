@@ -1,4 +1,4 @@
-# Welcome to theproject
+# Welcome to the project
 
 **Use your preferred IDE**
 
