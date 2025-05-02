@@ -6,8 +6,35 @@ import { format, addMonths, subMonths, startOfMonth, endOfMonth, startOfWeek, en
 import { Calendar, Users, Bell, PlusCircle, UserCheck, ChevronLeft, ChevronRight, 
          MessageSquare, Check, X, Info, MapPin, Clock } from 'lucide-react';
 
+// Type definitions for our application
+interface User {
+  id: number;
+  name: string;
+  avatar: string;
+  status: 'online' | 'offline';
+}
+
+interface Comment {
+  id: number;
+  userId: number;
+  text: string;
+  timestamp: string;
+}
+
+interface Event {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  location: string;
+  image: string;
+  creator: number;
+  attendees: number[];
+  comments: Comment[];
+}
+
 // Mock data for our application
-const MOCK_USERS = [
+const MOCK_USERS: User[] = [
   { id: 1, name: 'Alex Johnson', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', status: 'online' },
   { id: 2, name: 'Jamie Smith', avatar: 'https://randomuser.me/api/portraits/women/44.jpg', status: 'online' },
   { id: 3, name: 'Taylor Brown', avatar: 'https://randomuser.me/api/portraits/women/17.jpg', status: 'offline' },
@@ -15,7 +42,7 @@ const MOCK_USERS = [
   { id: 5, name: 'Casey Wilson', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', status: 'offline' },
 ];
 
-const MOCK_EVENTS = [
+const MOCK_EVENTS: Event[] = [
   { 
     id: 1, 
     title: 'Team Building Workshop', 
@@ -68,33 +95,6 @@ const MOCK_EVENTS = [
     comments: []
   },
 ];
-
-// Type definitions
-interface User {
-  id: number;
-  name: string;
-  avatar: string;
-  status: 'online' | 'offline';
-}
-
-interface Comment {
-  id: number;
-  userId: number;
-  text: string;
-  timestamp: string;
-}
-
-interface Event {
-  id: number;
-  title: string;
-  description: string;
-  date: string;
-  location: string;
-  image: string;
-  creator: number;
-  attendees: number[];
-  comments: Comment[];
-}
 
 const Index = () => {
   // State management
