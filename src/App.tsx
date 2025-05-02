@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import HabitTracker from "./pages/HabitTracker";
 
 // Create the query client
 const queryClient = new QueryClient();
@@ -17,7 +18,8 @@ const App = () => {
       <BrowserRouter>
         <TooltipProvider>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<HabitTracker />} />
+            <Route path="/old-index" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
