@@ -1,18 +1,4 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/f1f2e596-c94c-464e-bd30-20ceb5f3c477
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/f1f2e596-c94c-464e-bd30-20ceb5f3c477) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+# Welcome to theproject
 
 **Use your preferred IDE**
 
@@ -57,16 +43,9 @@ This project is built with:
 - Vite
 - TypeScript
 - React
-- shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f1f2e596-c94c-464e-bd30-20ceb5f3c477) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
