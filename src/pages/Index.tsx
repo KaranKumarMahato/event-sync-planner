@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { format, addMonths, subMonths, startOfMonth, endOfMonth, startOfWeek, endOfWeek, 
@@ -35,11 +34,11 @@ interface Event {
 
 // Mock data for our application
 const MOCK_USERS: User[] = [
-  { id: 1, name: 'Alex Johnson', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', status: 'online' },
-  { id: 2, name: 'Jamie Smith', avatar: 'https://randomuser.me/api/portraits/women/44.jpg', status: 'online' },
-  { id: 3, name: 'Taylor Brown', avatar: 'https://randomuser.me/api/portraits/women/17.jpg', status: 'offline' },
-  { id: 4, name: 'Jordan Garcia', avatar: 'https://randomuser.me/api/portraits/men/91.jpg', status: 'online' },
-  { id: 5, name: 'Casey Wilson', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', status: 'offline' },
+  { id: 1, name: 'Karan Kumar', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', status: 'online' },
+  { id: 2, name: 'Priya Sharma', avatar: 'https://randomuser.me/api/portraits/women/44.jpg', status: 'online' },
+  { id: 3, name: 'Anjali Patel', avatar: 'https://randomuser.me/api/portraits/women/17.jpg', status: 'offline' },
+  { id: 4, name: 'Rahul Singh', avatar: 'https://randomuser.me/api/portraits/men/91.jpg', status: 'online' },
+  { id: 5, name: 'Meera Reddy', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', status: 'offline' },
 ];
 
 const MOCK_EVENTS: Event[] = [
